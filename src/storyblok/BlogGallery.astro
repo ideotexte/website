@@ -44,7 +44,7 @@ const stories = data.stories?.sort((a, b) =>
             <div class="flex flex-col justify-between">
               <div>
                 <a class="mt-4" href={'/' + article.full_slug}>
-                  <div class="text-lg lg:text-2xl font-bold group-hover:text-accent duration-200">
+                  <div class="text-lg lg:text-2xl font-bold group-hover:text-secondary duration-200">
                     <span class="absolute inset-0" />
                     {article.content.titreArticle}
                   </div>
@@ -59,7 +59,7 @@ const stories = data.stories?.sort((a, b) =>
                   <div>
                     {article.content.creationDate && (
                       <span class="sr-only">{new Date(article.content.creationDate).toLocaleDateString("fr-FR")}</span>
-                      <p class="text-sm font-bold uppercase text-accent">
+                      <p class="text-sm font-bold uppercase">
                         <time datetime={article.content.creationDate}>{new Date(article.content.creationDate).toLocaleDateString("fr-FR")}</time>
                       </p>
                     )}
